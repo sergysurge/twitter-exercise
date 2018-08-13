@@ -72,6 +72,12 @@ Where max_id is the newest tweet to show, this is normally the latest tweet
 id_str attribute in the previous request, take into account that there is always
 a duplicate tweet doing it like this.
 
+Expected deliverable
+--------------------
+
+A zip or a github repo minus the keys and the secrets (also removed from the 
+commit history if they ever got leaked). And instructions to run the project.
+
 
 Thank you very much for accepting the challenge. Have fun!
 
