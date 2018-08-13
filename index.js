@@ -33,7 +33,6 @@ app.route('/:handle')
   });
 
 app.listen(3000, function(error) {
-  console.error(error);
   console.log('Trump listening on port 3000');
 });
 
