@@ -58,7 +58,7 @@ Put twitter keys and secrets inside index.js and run
 
   npm start
 
-To save time, we are providing you with temporary twitter keys and secrets.
+You can generate keys and tokens in the [Twitter developer portal](https://developer.twitter.com/en/apps) following [this instructions](https://developer.twitter.com/en/docs/basics/authentication/guides/securing-keys-and-tokens).
 
 Then you can start to ping the url like this:
 
