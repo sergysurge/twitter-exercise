@@ -13,7 +13,7 @@ The app has a single screen that is composed of two main components:
 The Menu
 --------
 
-Imagine a menu with two handles, for example [@realDonaldTrump, @elonmusk], this
+Imagine a menu with two handles, for example [@POTUS, @elonmusk], this
 menu must stay at the top of the visible window (sticky), if the user taps in
 the other handle, the list is replaced by the new list. If the user taps in the
 current selected handle, the list should scroll all the way up to the latest
@@ -72,7 +72,7 @@ Then you can start to ping the url like this:
 
 For example
 
-  http://localhost:3000/realDonaldTrump?max_id=1028275158342098944
+  http://localhost:3000/POTUS?max_id=1028275158342098944
 
 Where max_id is the newest tweet to show, this is normally the latest tweet
 id_str attribute in the previous request, take into account that there is always
