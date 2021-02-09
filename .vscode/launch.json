@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Local Debug",
+      "configurations": [
+        "Yarn Launch",
+        "Attach", 
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Yarn Launch",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": [
+        "run",
+        "debug"
+      ],
+      "port": 9229,
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach",
+      "port": 9229,
+      "stopOnEntry": false,
+      "restart": true,
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceRoot}/node_modules/**/*.js"
+      ],
+    },
+  ]
+}

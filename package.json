@@ -4,13 +4,38 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node -r dotenv/config .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev -p 1337",
+    "debug": "NODE_OPTIONS='--inspect' next dev -p 1337",
+    "build": "next build",
+    "start:server": "next start -p $PORT",
+    "test:server": "yarn types && yarn prettier-check",
+    "types": "tsc",
+    "prettier-check": "prettier --check \"{src,e2e}/**/*.{js,jsx,ts,tsx}\"",
+    "prettier-write": "prettier --write \"{src,e2e}/**/*.{js,jsx,ts,tsx}\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "dayjs": "^1.10.4",
     "express": "^4.16.3",
+    "next": "10.0.5",
+    "prettier": "^2.2.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-query": "^3.6.0",
+    "react-window": "^1.8.6",
+    "react-window-infinite-loader": "^1.0.7",
     "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "@types/react": "^17.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "typescript": "^4.1.3"
   }
 }
